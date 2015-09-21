@@ -35,11 +35,11 @@ We're using Heroku Pipelines with Github integration so:
 * Any update to `master` deploys to *staging*
 * *staging* can be promoted to *production* via the Heroku interface or this command: `$ heroku pipelines:promote -r staging`
 
-
-
 **Staging**
 
-To deploy directly to staging: `git push staging master`
+To deploy to staging: Create a pull request on Github and have it accepted before merging.
+
+If you need to deploy directly to staging: `git push staging master`
 
 [http://rc-east-staging.herokuapp.com/]()
 
