@@ -1,0 +1,24 @@
+!!!
+%html{lang: 'en-us'}
+  %head
+    %title Railscamp USA &mdash; East Coast
+    %meta{charset: "utf-8"}
+    %meta{name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" }
+
+    %link{href: "/main.css", media: "screen, projection", rel: "stylesheet", type: "text/css"}
+
+  %body
+    %h1 Railscamp USA &mdash; East Coast 
+
+    %section
+      %h2 Form
+      %form#header-form{action: "/signup", method: "post"}
+        %input#first{name: "email", placeholder: "you@email.com", type: "email"}
+        %input#first-submit{type: "submit", value: "submit"}
+        %flash= flash[:notice]
+
+    %section.social
+      %h2 Social
+      %p
+        %a{href: "https://twitter.com/"}
+          %img.twitter{alt: "Twitter", src: "images/twitter.png"}
