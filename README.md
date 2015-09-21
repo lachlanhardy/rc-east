@@ -29,9 +29,17 @@ It's a simple Sinatra app to serve a few static pages.
 Deployment
 ----------
 
+We're using Heroku Pipelines with Github integration so:
+
+* Pull Requests create their own Review Apps on Heroku
+* Any update to `master` deploys to *staging*
+* *staging* can be promoted to *production* via the Heroku interface or this command: `$ heroku pipelines:promote -r staging`
+
+
+
 **Staging**
 
-To deploy to staging: `git push staging master`
+To deploy directly to staging: `git push staging master`
 
 [http://rc-east-staging.herokuapp.com/]()
 
