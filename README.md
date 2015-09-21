@@ -33,10 +33,10 @@ Deployment
 
 To deploy to staging: `git push staging master`
 
-[http://rc-east-staging-landing.herokuapp.com/]()
+[http://rc-east-staging.herokuapp.com/]()
 
 **Production**
 
-To deploy to production: `git push production master`
+To deploy to production: `heroku pipelines:promote -r staging`
 
-[http://rc-east-landing.herokuapp.com/]()
+[http://rc-east.herokuapp.com/]()
