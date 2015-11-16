@@ -1,3 +1,116 @@
 @import "bourbon/bourbon";
 @import "base/base";
 @import "neat/neat";
+
+$ruby: #f00;
+$yellow: #FFFC19;
+$blue: #1485CC;
+$dark-blue: #0971B2;
+
+body{ 
+  font-family: "fira-mono", sans-serif;
+  margin: 0}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "mono45-headline", sans-serif;
+  margin: 2rem 0 0 0;
+  text-transform: uppercase
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  font-size: 3em;
+  letter-spacing: 0.05em;
+}
+
+h3 {
+  color: $ruby;
+  font-size: 3em;
+}
+
+h4 {
+  color: white;
+  font-size: 2em;
+}
+
+p,
+li {
+  font-size: 2em;
+}
+
+p.source {
+  font-size: 1.5em;
+  font-style: italic;
+}
+p.coc {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p.coc-link {
+  font-size: 1.1em;
+  margin: 0.5em 0 0 0;
+}
+
+a {
+  color: $blue;
+}
+
+a:hover {
+  color: $ruby;
+}
+
+a:visited,
+a:active,
+a:focus {
+  color: $dark-blue;
+}
+
+li {
+  list-style-type: square;
+  margin: 0 0 0 2rem;
+}
+
+.buy {
+  margin: 2rem auto 2rem auto;
+  text-align: center;
+}
+
+.title {
+  background: url("/images/ashokan.jpeg") no-repeat 0 -400px;
+  min-height: 733px;
+  padding: 5rem 0 0 0;
+  text-align: center;
+
+  h1 {
+    color: $yellow;
+    font-size: 8em;
+  }
+  h2 {
+    color: $yellow;
+    font-size: 5em;
+    font-style: italic;
+  }
+
+  .where {
+    margin: 2rem 0 0 0;
+    padding: 0 0 2rem 0;
+  }
+
+  p.coc-link {
+    color: white;
+  }
+}
+
+.info {
+  @include span-columns(8);
+  @include shift(2);
+}
+
+.list {
+  margin: 4rem 0 4rem 0;
+}
