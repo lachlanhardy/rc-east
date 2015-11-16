@@ -40,6 +40,10 @@ get '/' do
   haml :index
 end
 
+get '/conduct/' do
+  haml :conduct
+end
+
 post '/signup' do
   success_message = "Thanks for signing up!"
   fail_message = "That didn't work for some reason, please try again."
