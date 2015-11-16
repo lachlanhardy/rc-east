@@ -5,43 +5,52 @@
     %meta{charset: "utf-8"}
     %meta{name: "viewport", content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=yes" }
 
-    %script{:src => "https://use.typekit.net/zvv4pnr.js"}
-    :javascript
-      try{Typekit.load({ async: true });}catch(e){}
-
-    %link{href: "/main.css", media: "screen, projection", rel: "stylesheet", type: "text/css"}
+    %link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css")
+    %link{href: "/main.css", rel: "stylesheet", type: "text/css"}
 
   %body
-    %section.title
+    %header.hero
+      .hero-heading
+        %small East Coast Edition
+        %h1 Rails Camp USA
+        %p
+          Join us for three nights of hacking, socialising and game playing,
+          without any phone or internet
 
-      %h1 Rails Camp USA
-      %h2 East Coast Edition
-      %h3 Join us for three nights of hacking, socializing and game playing, without any phone or internet.
-
-      %section.where
-        %h4 8&mdash;11 APRIL, 2016
-        %h4 ASHOKAN CENTER, CATSKILLS, NY
-        %section.buy
+      %footer
+        .hero-dates
+          %strong 8&ndash;11 April, 2016
+        .hero-venue
+          %strong Ashokan Center
+          %span Catskills, NY
+        .hero-buy
           %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
-          %p.coc-link
-            Read the 
-            %a{href: "/conduct"} Code of Conduct
+
+    %section.intro
+      .highlight
+        Rails Camps are events for members of the
+        %br
+        web development community to meet others
+        %br
+        and learn from each other.
+
+      %p
+        You should come to Rails Camp if you’re interested in Ruby,
+        Rails or any other web technology,
+        if you want to hack on somethng,
+        or if you want to hang out, meet new people, and play werewolf.
+
+      %h2 Code of conduct
+      %p
+        Rails Camp USA has an anti-harassment policy and
+        requires all attendees to abide by a Code of Conduct.
+        You can read it here:
+        <a href="/conduct">Rails Camp USA Code of Conduct</a>.
 
     %section.info
-      %h2 Rails Camps are events for members of the web development community to meet others and learn from each other.
-      %p You should come to Rails Camp if you’re interested in Ruby, Rails or any other web technology, if you want to hack on something, or if you want to hang out, meet new people, and play werewolf.
+      %h1 All you need to know
 
-      %h2 ALL YOU NEED TO KNOW
-
-      %h3 Code of Conduct
-      %p Rails Camp USA has an anti-harassment policy and requires all attendees to abide by a Code of Conduct. You can read it here: <a href="/conduct">Rails Camp USA Code of Conduct</a>.
-
-      %h3 Location
-      %p The Ashokan Center is located in the Catskills area, two hours drive from New York. You're welcome to make your own way there. The Center has plenty of parking.
-      %p  However, we will be organizing buses from JFK airport or Port Authority to the camp site for those people who need a lift. There will also be a return bus at the end of the camp, back to the pick up location.
-      %p Phone reception at the camp is patchy at best. You might be able to get a phonecall if you’re standing in the right place, but don’t expect to be able to tether from your phone.
-
-      %h3 Camp Essentials:
+      %h2 Camp essentials
       %ul
         %li A sleeping bag or doona and sheets, plus a pillowcase
         %li A towel (or two!)
@@ -49,32 +58,80 @@
         %li Your laptop and power source, plus any other computer gear you want to bring
         %li Toiletries plus any medications you regularly take
 
-      %h3 Nice-to-have:
+      %h2 Nice to have
       %ul
         %li Extra snacks
         %li Any “fancy” liquor you wish to consume. The camp will be providing non-alcoholic soft drinks, tea, and coffee
         %li Games to play with others. Board games or card games are always popular
         %li Anything you can't live without
 
-      %h3 Projects &amp; Hacking 
+      %h2 Projects, hacking and speaking
       %p If you want to work on a project at Rails Camp, we recommend you:
       %ul
         %li Download copies of all the relevant documentation you can
         %li Start your project before you go, so you know that everything will be there
         %li Make a goal for what you want achieved by the end of the weekend
 
-      %section.buy
-        %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
-        %p.coc-link
-          Read the 
-          %a{href: "/conduct"} Code of Conduct
+    %section.location
+      .location-description
+        %h1 Location
+        %p
+          The Ashokan Center is located in the Catskills area,
+          two hours drive from New York.
+          You're welcome to make your own way there.
+          The Center has plenty of parking.
+        %p
+          However, we will be organising buses from
+          JFK airport or Port Authority to the camp site
+          for those people who need a lift.
+          There will also be a return bus at the end of the camp,
+          back to the pick up location.
+        %p
+          Phone reception at the camp is patchy at best.
+          You might be able to get a phonecall
+          if you’re standing in the right place,
+          but don’t expect to be able to tether from your phone.
 
-      %section.list
-        %h2 Mailing list
+      .location-map
+        %a(href="http://www.google.com/maps?q=477%20Beaverkill%20Rd%2C%20Olivebridge%2C%20NY%2012461%2C%20USA" target="_blank" class="location-map")
+          .location-map-image
+            %svg(class="location-map-marker" width="50px" height="60px" viewBox="0 0 50 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns")
+              %g(fill-rule="evenodd")
+                %path(class="location-map-marker-icon" d="M25,60 C25,60 48,36.6163112 48,23.9444444 C48,11.2725777 37.7025492,1 25,1 C12.2974508,1 2,11.2725777 2,23.9444444 C2,36.6163112 25,60 25,60 Z M25,30.5 C29.3551597,30.5 32.8857143,26.9779734 32.8857143,22.6333333 C32.8857143,18.2886933 29.3551597,14.7666667 25,14.7666667 C20.6448403,14.7666667 17.1142857,18.2886933 17.1142857,22.6333333 C17.1142857,26.9779734 20.6448403,30.5 25,30.5 Z")
+          .location-map-description
+            .location-map-name Ashokan Center, Catskills, NY
+            .location-map-address 477 Beaverkill Rd, Olivebridge
+
+
+    %section.organisers
+      %h1 Organisers
+      %div
+        %article.organisers-organiser.elle-meredith
+          .organisers-organiser-image
+          %p.organisers-organiser-name Elle Meredith
+          %p.organisers-organiser-twitter
+            %a(href="http://www.twitter.com/aemeredith") @aemeredith
+        %article.organisers-organiser.lachlan-hardy
+          .organisers-organiser-image
+          %p.organisers-organiser-name Lachlan Hardy
+          %p.organisers-organiser-twitter
+            %a(href="http://www.twitter.com/lachlanhardy") @lachlanhardy
+
+    %section.sponsors
+      %h1 Sponsors
+      %p We are looking for sponsors. Please get in touch!
+
+    %section.buy
+      %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
+      %p.coc-link
+        Read the
+        %a{href: "/conduct"} Code of Conduct
+
+    %footer.mailing-list
+      %div
+        %h1 Mailing list
         %p Not sure yet but want to stay in touch?
         %form{action: "/signup", method: "post"}
           %input{name: "email", placeholder: "you@email.com", type: "email"}
           %input{type: "submit", value: "submit"}
           %flash= flash[:notice]
-
-    %iframe{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20767.136355671195!2d-74.20955042049981!3d41.92648308519199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dd02b094a224bb%3A0x6c8e835a6b393c93!2sThe+Ashokan+Center!5e1!3m2!1sen!2sus!4v1447638949427", :width => "100%",  :height => "450", :frameborder => "0", :style => "border:0", :allowfullscreen => "allowfullscreen"}
