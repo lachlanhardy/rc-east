@@ -28,6 +28,7 @@ GEM
       rack
     rack-protection (1.5.3)
       rack
+    rack-ssl-enforcer (0.2.9)
     sass (3.4.5)
     sinatra (1.4.6)
       rack (~> 1.4)
@@ -48,6 +49,7 @@ DEPENDENCIES
   haml (= 4.0.6)
   neat (= 1.7.2)
   rack-flash3 (= 1.0.5)
+  rack-ssl-enforcer
   sass (= 3.4.5)
   sinatra (= 1.4.6)
 

@@ -9,6 +9,7 @@ gem 'neat', '1.7.2'
 gem 'rack-flash3', '1.0.5'
 gem 'sass', '3.4.5'
 gem 'sinatra', '1.4.6'
+gem 'rack-ssl-enforcer'
 
 group :development do
   gem 'dotenv'
