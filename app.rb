@@ -10,7 +10,9 @@ end
 
 configure do
   set :haml, :format => :html5
-  enable :sessions
+
+  use Rack::SslEnforcer, :only_environments => ['production', 'staging']
+  use Rack::Session::Cookie
   use Rack::Flash
 
   if production?
