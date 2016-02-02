@@ -119,7 +119,15 @@
 
     %section.sponsors
       %h1 Sponsors
-      %p We are looking for sponsors. Please get in touch!
+      %div
+        %article.sponsors-sponsor.buildkite
+          .sponsors-sponsor-image
+          / %p.sponsors-sponsor-name Buildkite
+          %p.sponsors-sponsor-twitter
+            %a(href="http://buildkite.com") http://buildkite.com
+
+      %p We are looking for more sponsors. Please <a href="mailto:railscampusa@gmail.com">get in touch</a>!
+
 
     %section.buy
       %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
