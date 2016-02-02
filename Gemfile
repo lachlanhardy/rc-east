@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.2.3'
+ruby '2.2.4'
 
 gem 'bitters', '1.1.0'
 gem 'bourbon', '5.0.0.alpha.0'
