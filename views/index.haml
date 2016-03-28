@@ -24,7 +24,9 @@
           %strong Ashokan Center
           %span Catskills, NY
         .hero-buy
-          %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
+          #nvite-widget-wrapper-imbc14pw.nvite-widget-wrapper.nvite-rsvp-widget-container
+            %button.nvite-rsvp-widget-button
+              Ticket Sales Closed
 
     %section.intro
       .highlight
@@ -150,7 +152,6 @@
             .location-map-name Ashokan Center, Catskills, NY
             .location-map-address 477 Beaverkill Rd, Olivebridge
 
-
     %section.organisers
       %h1 Organisers
       %div
@@ -189,19 +190,12 @@
             %p.sponsors-sponsor-name
               Dev Bootcamp
 
-      %p We are looking for more sponsors to help support the camp. Rails Camp is a unique opportunity for your company to engage with a bunch of cool, diverse developers and designers that are also active in the Ruby and web communities. If you think you company will be interested in sponsoring Rails Camp, please <a href="mailto:railscampusa@gmail.com">get in touch</a>!
-
-
-    %section.buy
-      %script{async: "async", src: "//widgets.nvite.com/1.1/button.js", "data-resource": "ce11", "data-button-text": "REGISTER NOW"}
-      %p.coc-link
-        Read the
-        %a{href: "/conduct"} Code of Conduct
+      %p We are looking for one more sponsor to help support the camp. Rails Camp is a unique opportunity for your company to engage with a bunch of cool, diverse developers and designers that are also active in the Ruby and web communities. If you think you company will be interested in sponsoring Rails Camp, please <a href="mailto:railscampusa@gmail.com">get in touch</a>!
 
     %footer.mailing-list
       %div
         %h1 Mailing list
-        %p Not sure yet but want to stay in touch?
+        %p Want to stay in touch?
         %form{action: "/signup", method: "post"}
           %input{name: "email", placeholder: "you@email.com", type: "email"}
           %input{type: "submit", value: "submit"}
